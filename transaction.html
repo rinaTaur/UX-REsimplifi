@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Prototype Starter</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/yeti/bootstrap.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body class="REsimplifi view-transaction">
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="">
+        <a href="#" class="logo text-hide">REsimplifi Main</a>
+        <ul class="pull-right">
+          <li><a href="#scratchpad">Scratchpad</a></li>
+          <li><a href="#calendar" class="cd-btn">Calendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<!-- fire panel -->
+
+  <div class="cd-panel from-right">
+    <header class="cd-panel-header">
+      <h1 class="currentDate"></h1>
+      <a href="#0" class="cd-panel-close">Close</a>
+    </header>
+
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+
+        <p>Calendar / Scratchpad area</p>
+        <p><span class="label label-warning">Cool Idea!</span> <a href="http://momentjs.com/" target="_blank">A neat date js that makes dates sound friendly and contextual</a></p>
+      </div> <!-- cd-panel-content -->
+    </div> <!-- cd-panel-container -->
+  </div> <!-- cd-panel -->
+
+<!-- / fire panel -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <header class="greetings">
+        <div class="pull-left">
+          <h1><a href="index.html"><i class="fa fa-angle-left"></i></a></h1>
+        </div>
+        <div class="col-sm-10">
+          <h1>4535 Greenway Ave. - Sale <small class="annotation"><em><span class="fa fa-arrow-left"></span> (this needs to be a default: property - object [sale / lease only])</em></small></h1>
+          <h4>4535 Greenway Avenue - Suite 600  |  210,000 Sq. Ft. | $2,100,000 <small class="annotation"><em>(conditional)</em></small></h4>
+        </div>
+        <div class="pull-right">
+          <h1 class="transaction-progress transaction-progress-20">20%</h1>
+          
+          <div class="btn-group">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h4 class="transaction-status transaction-followup"><i class="fa fa-circle"></i> Follow Up  <span class="caret"></span></h4> 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#quickadd-contact" data-toggle="tab">Pending</a></li>
+              <li><a href="#quickadd-account" data-toggle="tab">Status 2</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#quickadd-property" data-toggle="tab">Status 3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </header>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="master col-sm-9">
+
+            <div class="view-box">
+              <div class="col-sm-3">
+                <!-- progress chart -->
+                <div class="progress-radial progress-20">
+                  <div class="overlay">20%</div>
+                </div>
+                <!-- / progress chart -->
+              </div>
+              <div class="col-sm-3">
+                
+                <i class='fa fa-file fa-3 text-primary' style="font-size: 3em;"></i> <h4>next step <br /><small>Letter of Intent</small></h4> 
+              </div>
+              <div class="clearfix"></div>
+            </div>
+
+
+            <!-- property - details -->
+            <div>
+              <div id="tab" class="btn-group tab-nav" data-toggle="buttons-radio">
+                  <a href="#properties" class="btn btn-nav active" data-toggle="tab">Property</a>
+                  <a href="#details" class="btn btn-nav" data-toggle="tab">Transaction Details</a>
+                  <a href="#documents" class="btn btn-nav" data-toggle="tab">Documents</a>
+                  <a href="#notes" class="btn btn-nav" data-toggle="tab">Notes</a>
+                  <div class="btn-group hide">
+                    <button type="button" class="btn btn-nav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Quick Add <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#quickadd-contact" data-toggle="tab">Contact</a></li>
+                      <li><a href="#quickadd-account" data-toggle="tab">Account</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#quickadd-property" data-toggle="tab">Property</a></li>
+                    </ul>
+                  </div>
+                </div>
+              
+                 
+                <div class="tab-content view-box view-box-border">
+                  <div class="tab-pane active" id="properties">
+                     <div class="client-property-preferences fields hide">
+                        <h4>Property Preferences</h4>
+                        
+
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Property Type</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">Industrial</a></li>
+                            <li><a href="#" data-toggle="tab">Retail</a></li>
+                            <li><a href="#" data-toggle="tab">Office</a></li>
+                            <li><a href="#" data-toggle="tab">Land</a></li>
+                            <li><a href="#" data-toggle="tab">Other</a></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Property Class</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">A</a></li>
+                            <li><a href="#" data-toggle="tab">B</a></li>
+                            <li><a href="#" data-toggle="tab">C</a></li>
+                            <li><a href="#" data-toggle="tab">D</a></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Square Footage</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Parking Required</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">Yes</a></li>
+                            <li><a href="#" data-toggle="tab">No</a></li>
+
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Market / Submarket</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">one</a></li>
+                            <li><a href="#" data-toggle="tab">two</a></li>
+
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Target Occupancy Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Agency Commencement Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Agency Expiration Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                      <!-- Property Info / field for Seller and Landlord -->
+                      <div class="client-property fields ">
+                        <h4>Property Details</h4>
+                        <div class="col-sm-3 col-md-3">
+
+                            <div class="property-photo-primary" style="background-color: #ccc; display: block; height:150px; width: 100%; margin-bottom: 10px;">Primary Photo</div>
+                            <div class="property-photo-secondary" style="background-color: #ccc; display: block; height:150px; width: 100%; margin-bottom: 10px;">Secondary Photo</div>
+                            <div class="property-photo-misc" style="background-color: #ccc; display: block; height:150px; width: 100%; margin-bottom: 10px;">Floorplan</div>
+                            <a href="#" data-toggle="tab" class="btn btn-primary btn-xs btn-block">Add Image</a>
+                        </div>
+                        <div class="col-sm-9">
+                            <div>
+                            4535 Greenway Ave.<br />
+                            Cityville, ST 12345<br />
+                            USA
+                            </div>
+                            
+                           
+                            
+                            
+
+                            
+                             
+                          </div>
+                      </div>
+                      <div class="clearfix"></div>
+                  </div>
+                  <div class="tab-pane" id="details">
+                    <a href="#" data-toggle="tab" class="btn btn-primary pull-right">Edit</a>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="tab-pane" id="documents">
+                     <div class="document-progress">
+                        <h3>Executed Documents</h3>
+                          <ul>
+                            <li>Listing Proposal</li>
+                            <li>Listing Agreement Processing Document</li>
+                          </ul>
+                      </div>
+                      <div class="document-templates">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Template</th>
+                            <th>action</th>
+                            <th>status</th>
+                            <th>executed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                        <tfoot>
+                          
+                        </tfoot>
+                      </table>
+
+
+                        <h3>Document Templates</h3>
+                          <ul>
+                            <li>
+                              Listing Documents
+                              <ul>
+                                <li>Listing Proposal</li>
+                                <li>Listing Agreement</li>
+                                <li>Processing Form</li>
+                                <li>Sign Request</li>
+                                <li>Flyer Request</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Transactional Documents
+                              <ul>
+                                <li>Proposal</li>
+                                <li>Letter of Intent</li>
+                                <li>Commission Agreement</li>
+                                <li>Agency Disclosure</li>
+                                <li>Lease</li>
+                                <li>Lease Process Form</li>
+                                <li>Lease Amendment</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Procedural Documents
+                              <ul>
+                                <li>Comp Database</li>
+                                <li>Lease Termination</li>
+                                <li>Lease Termination Processing</li>
+                              </ul>
+                            </li>
+
+                          </ul>
+                      </div>
+                      <div class="document-uploads">
+                        <h3>Uploaded Documents</h3>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="quickadd-contact">
+                      quickadd contact
+                  </div>
+                  <div class="tab-pane" id="quickadd-account">
+                      quickadd account
+                  </div>
+                  <div class="tab-pane" id="quickadd-property">
+                      
+                  
+                  </div>
+                  <div class="tab-pane" id="notes">
+                      notes
+                  
+                  </div>
+                </div>
+            </div>
+            
+            <!-- / property - details -->
+       
+      </div>
+      <div class="sidebar col-sm-3">
+        <h2>Seller Account</h2>
+        <small class="annotation"><em>(account fields from spreadsheet - all 4 types)</em></small>
+        <div class="client-logo" style="background-color: #ccc; display: block; height:70px; width: 70px; float: left; margin-right: 10px;">Logo</div>
+        <ul class="client-account">
+          <li>Account Name</li>
+          <li>123 Main Street, Suite 4<br />Cityville, ST 12345</li>
+          <li>USA </li>
+          <li>Parent Account <small  class="annotation"><em>(?)</em></small></li>
+        </ul>
+        <a href="#quickadd-contact" data-toggle="tab" class="btn btn-primary btn-xs btn-block">Edit Account</a>
+        
+       
+        
+        <h4>Seller Contacts</h4>
+        <!-- Split button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-xs"><small class="contact-primary" title="Primary"><i class="fa fa-file text-primary"></i> </small>Rose Gonzalez </button>
+            <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="btn-group">
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Edit</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Save</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Delete</a>
+                </div>
+                
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <ul>
+                  <li>Department: Procurement</li>
+                  <li>Email: rose@edge.com</li>
+                  <li>Fax: (512) 757-9999</li>
+                  <li>FirstName: Rose</li>
+                  <li>LastName: Gonzalez</li>
+                  <li>Title: SVP, Procurement</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Split button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-xs">Jane Doe </button>
+            <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="btn-group">
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Edit</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Save</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Delete</a>
+                </div>
+                
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <ul>
+                  <li>Department: Procurement</li>
+                  <li>Email: rose@edge.com</li>
+                  <li>Fax: (512) 757-9999</li>
+                  <li>FirstName: Rose</li>
+                  <li>LastName: Gonzalez</li>
+                  <li>Title: SVP, Procurement</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        <div class="client-property-preferences fields ">
+                        <h4>Property Preferences</h4>
+                        
+
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Property Type</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">Industrial</a></li>
+                            <li><a href="#" data-toggle="tab">Retail</a></li>
+                            <li><a href="#" data-toggle="tab">Office</a></li>
+                            <li><a href="#" data-toggle="tab">Land</a></li>
+                            <li><a href="#" data-toggle="tab">Other</a></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Property Class</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">A</a></li>
+                            <li><a href="#" data-toggle="tab">B</a></li>
+                            <li><a href="#" data-toggle="tab">C</a></li>
+                            <li><a href="#" data-toggle="tab">D</a></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Square Footage</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Parking Required</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">Yes</a></li>
+                            <li><a href="#" data-toggle="tab">No</a></li>
+
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Market / Submarket</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="tab">one</a></li>
+                            <li><a href="#" data-toggle="tab">two</a></li>
+
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Target Occupancy Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Agency Commencement Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-xs">Agency Expiration Date</button>
+                          <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li></li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+         <a href="#quickadd-contact" data-toggle="tab" class="btn btn-xs btn-default btn-block">Add Contact</a>
+         <div class="">
+          <h2>Buyer Account</h2>
+            <small class="annotation"><em>(account fields from spreadsheet - all 4 types)</em></small>
+            <ul class="client-account">
+              <li>Account Name</li>
+              <li>123 Main Street, Suite 4<br />Cityville, ST 12345</li>
+              <li>USA </li>
+            </ul>
+            <a href="#quickadd-contact" data-toggle="tab" class="btn btn-primary btn-xs btn-block">Edit Account</a>
+            <h4>Buyer Contacts</h4>
+            <!-- Split button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-xs"><small class="prospect-active" title="Active"><i class="fa fa-circle"></i> </small> <small class="contact-primary" title="Primary"><i class="fa fa-file text-primary"></i> </small>Rina Henderson  </button>
+              <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="btn-group">
+                    <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Edit</a>
+                    <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Save</a>
+                    <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Delete</a>
+                  </div>
+                  
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <ul>
+                    <li>Department: Procurement</li>
+                    <li>Email: rose@edge.com</li>
+                    <li>Fax: (512) 757-9999</li>
+                    <li>FirstName: Rose</li>
+                    <li>LastName: Gonzalez</li>
+                    <li>Title: SVP, Procurement</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Split button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-xs">Joe Schmoe </button>
+            <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="btn-group">
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Edit</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Save</a>
+                  <a href="#" data-toggle="tab" class="btn btn-xs btn-default">Delete</a>
+                </div>
+                
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <ul>
+                  <li>Department: Procurement</li>
+                  <li>Email: rose@edge.com</li>
+                  <li>Fax: (512) 757-9999</li>
+                  <li>FirstName: Rose</li>
+                  <li>LastName: Gonzalez</li>
+                  <li>Title: SVP, Procurement</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+            
+            <a href="#quickadd-contact" data-toggle="tab" class="btn btn-xs btn-default btn-block">Add Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <!-- Latest compiled and minified JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+     <script>
+        $(document).ready(function() {
+          // enabling popover
+          $("[data-toggle=popover]").popover();    
+
+          // another popover
+          $("#popoverExampleTwo").popover({
+              html : true, 
+              content: function() {
+                return $('#popoverExampleTwoHiddenContent').html();
+              },
+              title: function() {
+                return $('#popoverExampleTwoHiddenTitle').html();
+              }
+          });      
+
+          // fire panel
+          //open the lateral panel
+          $('.cd-btn').on('click', function(event){
+            event.preventDefault();
+            $('.cd-panel').addClass('is-visible');
+          });
+          //clode the lateral panel
+          $('.cd-panel').on('click', function(event){
+            if( $(event.target).is('.cd-panel') || $(event.target).is('.cd-panel-close') ) { 
+              $('.cd-panel').removeClass('is-visible');
+              event.preventDefault();
+            }
+          });
+
+          // current date
+          var d = new Date();
+
+          var month = d.getMonth()+1;
+          var day = d.getDate();
+
+          var output = 
+              ((''+month).length<2 ? '0' : '') + month + '/' +
+              ((''+day).length<2 ? '0' : '') + day + '/' + d.getFullYear() ;
+          $('.currentDate').html(output);
+        });
+     </script>
+
+
+  </body>
+</html>

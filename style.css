@@ -1,0 +1,841 @@
+body.REsimplifi  {
+  border-top: 3px solid rgb(15, 107, 152);
+}
+
+.REsimplifi ul li {
+  list-style-type: none;
+}
+.REsimplifi header.greetings {
+  border-bottom: 2px solid #008cba;
+}
+.REsimplifi .greetings {
+   margin: 20px;
+}
+.REsimplifi .funnelChart div.col-xs-2 {
+  background-color:#77C2D9;
+  height: 300px;
+  color:#fff;
+  border:1px solid #fff;
+}
+
+.REsimplifi header.funnelChart div.col-xs-2 {
+  height: 50px;
+  margin-bottom: 5px;
+}
+.REsimplifi .funnelChart .popover {
+  background-color: #fff;
+  color:#ccc;
+}
+
+/* scratchpad and calendar nav */
+.REsimplifi nav ul {
+  padding: 10px;
+  background-color: #F98137;
+}
+.REsimplifi nav ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px;
+}
+.REsimplifi nav ul li > a {
+  color:#fff;
+}
+.REsimplifi .zeroPadding {
+  padding: 0 !important;
+}
+.REsimplifi .logo {
+  background-image: url(resimplifi-logo.png);
+  float: left;
+  width: 110px;
+  height: 40px;
+  background-size: cover;
+  margin:5px;
+}
+.REsimplifi tr.collapse.out {
+  display: none;
+}
+.REsimplifi tr.collapse.out > td {
+  padding: 0;
+}
+.REsimplifi tr.collapse.in > td {
+  padding: 20px;  
+}
+.REsimplifi .master div.in {
+  height: 300px; 
+}
+.REsimplifi table>tbody>tr>td {
+  padding: 10px 10px!important;
+}
+.REsimplifi .table>tbody>tr.hiddenRow>td {
+  padding:0px!important;
+}
+.REsimplifi .hiddenRow {
+  background-color: #DEF4FA;
+}
+.REsimplifi .hiddenRow strong {
+  font-size:20px;
+}
+.REsimplifi .hiddenRow .metrics .col-sm-2 {
+  text-align: center;
+}
+.REsimplifi .border-top {
+  border-top:1px solid #ccc;
+}
+.REsimplifi .input-group .btn {
+  /*padding: 4px 10px!important;*/
+}
+.REsimplifi .input-group input.list-search {
+  font-weight: normal;
+}
+.REsimplifi .filter-bar li>a {
+  font-weight: normal;
+  color:#7C7C7C;
+}
+.REsimplifi .filter-bar .filter-active {
+  border-bottom: 2px solid #77C2D9;
+}
+.REsimplifi .filter-bar .filter-inactive {
+  border-bottom: 2px solid #ccc;
+}
+
+ .REsimplifi .tab-content {
+  /* border: 1px solid #C0C0C0; */
+  margin: 0 20px;
+  clear: both;
+}
+.REsimplifi .tab-nav, .REsimplifi .tab-content {
+  /* margin: 21px 20px 10.5px 20px; */
+  margin:0px;
+}
+.REsimplifi .table-nav {
+  background-color:#fff;
+  padding: 5px 0;
+}
+/*
+.REsimplifi .btn-nav, .btn-nav.active, .REsimplifi .btn-nav.focus {
+  background-color: #fff!important;
+  border:0px transparent!important;
+}
+*/
+.REsimplifi .btn-nav span.caret {
+  margin-left: 13px;
+}
+.REsimplifi .btn-group .dropdown-menu {
+  min-width: 100%;
+}
+
+/* --- TRANSACTION STATES --- */
+
+/* ACTIVE */
+.REsimplifi tr.transaction-active td {
+  background-color:#fff;
+}
+/* border right
+.REsimplifi tr.transaction-active td:last-child  {
+   /* border-right: 6px solid #77C2D9; nice blue * /
+   border-right: 6px solid #A8DC80;
+}*/
+
+
+/* INACTIVE */
+.REsimplifi tr.transaction-inactive td { /* row color */
+  background-color:#F5F5F5;
+}
+.REsimplifi tr.transaction-inactive td:last-child { /* left border color */
+   border-right: 6px solid #ccc; 
+}
+.REsimplifi tr.transaction-inactive .transaction-status, .REsimplifi tr.transaction-inactive td a { /* row color */
+  color:#ccc;
+}
+
+/* FOLLOWUP */
+.REsimplifi .transaction-goodstanding .fa {
+  color:#A8DC80;
+}
+/* PENDING */
+.REsimplifi .transaction-pending .fa {
+  color:#F9E619;
+}
+/* FOLLOWUP */
+.REsimplifi .transaction-followup .fa {
+  color:#E44E6F;
+}
+
+/* CONTACT AND PROSPECT STATUS */
+.REsimplifi .prospect-active {
+  color:#008cba;
+  font-size: 12px;
+  margin-left:-15px;
+}
+.REsimplifi .prospect-inactive {
+  color:#ccc;
+  font-size: 12px;
+  margin-left:-15px;
+}
+.REsimplifi .contact-primary {
+  color:#FFA31C;
+  font-size: 12px;
+}
+
+/* /// PROGRESS /// */
+
+/* base */
+.REsimplifi .transaction-progress {
+}
+/* 0% */
+.REsimplifi .transaction-progress-0 {
+  color: #ccc;
+}
+/* 20% */
+.REsimplifi .transaction-progress-20 {
+  color: #C7E9B4;
+}
+/* 40% */
+.REsimplifi .transaction-progress-40 {
+  color: #7FCDBB;
+}
+/* 60% */
+.REsimplifi .transaction-progress-60 {
+  color: #41B6C4;
+}
+/* 80% */
+.REsimplifi .transaction-progress-80 {
+  color: #1D91C0;
+}
+/* 100% */
+.REsimplifi .transaction-progress-100 {
+  color: #225EA8;
+}
+
+.REsimplifi .view-box {
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.REsimplifi .view-box-border {
+  border: 1px solid #E6F3F7;
+}
+.REsimplifi .tab-nav.btn-group {
+  display: block;
+}
+.REsimplifi .tab-nav.btn-group a.btn-default {
+}
+.REsimplifi .transaction-table td {
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.REsimplifi .transaction-type {
+ font-size: 10px;
+  font-weight: normal;
+  min-width: 70px;
+  display: inline-block;
+  text-align: center;
+  line-height: 11px;
+  padding: 3px 0;
+  border-radius: 15px;
+}
+.REsimplifi .transaction-status {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 12px;
+}
+
+/* circle label pattern */
+/*.REsimplifi .transaction-type { 
+  background-color: #ccc;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  margin: 0 10px;
+}*/
+
+/* TRANSACTION TYPES */
+.REsimplifi .transaction-type.transaction-Landlord { /* orange w/ white letters */
+  color: #fff;
+  background-color: #FFAE37;
+  border:2px solid #FFAE37;
+}
+.REsimplifi .transaction-type.transaction-Tenant { /* white w/ orange letters */
+  color: #FFAE37;
+  background-color: #fff;
+  border: 2px solid #FFAE37;
+}
+.REsimplifi .transaction-type.transaction-Seller { /* blue w/ white letters */
+  color: #fff;
+  background-color: #008CBA;
+  border:2px solid #008CBA;
+}
+.REsimplifi .transaction-type.transaction-Buyer { /* white w/ blue letters */
+  color: #008CBA;
+  background-color: #fff;
+  border: 2px solid #008CBA;
+}
+
+/* Transaction Sidebar */
+.REsimplifi .client-account li {
+  font-size:12px;
+  color: #6D6D6D;
+}
+
+.REsimplifi .sidebar .btn-group {
+  width: 100%;
+}
+.REsimplifi .sidebar .btn-group .btn, .REsimplifi .fields .btn-group .btn {
+  background-color: #fff;
+}
+.REsimplifi .sidebar .btn-group .btn.dropdown-toggle {
+  float: right;
+}
+
+.REsimplifi .form-control {
+  -webkit-appearance: none;
+  border: 0;
+}
+
+.REsimplifi .document-type {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.REsimplifi .document-type.Word {
+    background-color: #2564A9;
+}
+.REsimplifi .document-type.Word:before {
+  content:'W';
+}
+.REsimplifi .document-type.Excel {
+    background-color: green;
+}
+.REsimplifi .document-type.Excel:before {
+  content:'X';
+}
+.REsimplifi .document-type.PDF {
+    background-color: #c12008;
+}
+.REsimplifi .document-type.PDF:before {
+  content:url(Adobe_Acrobat_Reader20.png);
+  padding: 0px;
+}
+.REsimplifi .document-templates button {
+  font-size:10px;
+}
+.REsimplifi .document-templates button.btn.dropdown-toggle {
+    width: 25px;
+}
+
+/* Utility */
+.REsimplifi .annotation {
+  font-style: 9px!important;
+  color: red;
+  display: none;
+}
+
+
+
+
+/* RADIAL CHARTING */
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fffde8;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(90deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(108deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #BEE1EC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #008cba 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #008cba 50%, #BEE1EC 50%, #BEE1EC);
+}
+
+
+
+/* SCRATCHPAD / CALENDAR FLY IN */
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+.cd-panel *, .cd-panel *::after, .cd-panel *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cd-panel *::after, .cd-panel *::before {
+  content: '';
+}
+/*
+body {
+  font-size: 100%;
+  font-family: "Droid Sans", sans-serif;
+  color: #dbe2e9;
+  background: #424f5c;
+}
+
+a {
+  color: #89ba2c;
+  text-decoration: none;
+}
+*/
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+html, body {
+  height: 100%;
+}
+
+.cd-main-content {
+  text-align: center;
+}
+.cd-main-content h1 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #64788c;
+  padding: 4em 0;
+}
+.cd-main-content .cd-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1em 2em;
+ /* background-color: #89ba2c; */
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 50em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.no-touch .cd-main-content .cd-btn:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-main-content h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
+.cd-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s;
+}
+.cd-panel::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s 0.3s;
+  -moz-transition: background 0.3s 0.3s;
+  transition: background 0.3s 0.3s;
+}
+.cd-panel.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.cd-panel.is-visible::after {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+}
+.cd-panel.is-visible .cd-panel-close::before {
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+}
+.cd-panel.is-visible .cd-panel-close::after {
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes cd-close-1 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@-moz-keyframes cd-close-1 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(45deg);
+  }
+}
+@keyframes cd-close-1 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes cd-close-2 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+  }
+}
+@-moz-keyframes cd-close-2 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(-45deg);
+  }
+}
+@keyframes cd-close-2 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+.cd-panel-header {
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: top 0.3s 0s;
+  -moz-transition: top 0.3s 0s;
+  transition: top 0.3s 0s;
+}
+.cd-panel-header h1 {
+  
+  padding-left: 5%;
+}
+.from-right .cd-panel-header, .from-left .cd-panel-header {
+  top: -50px;
+}
+.from-right .cd-panel-header {
+  right: 0;
+}
+.from-left .cd-panel-header {
+  left: 0;
+}
+.is-visible .cd-panel-header {
+  top: 0;
+  -webkit-transition: top 0.3s 0.3s;
+  -moz-transition: top 0.3s 0.3s;
+  transition: top 0.3s 0.3s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-header {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-panel-header {
+    width: 50%;
+  }
+}
+
+.cd-panel-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  /* image replacement */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.cd-panel-close::before, .cd-panel-close::after {
+  /* close icon created in CSS */
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  height: 3px;
+  width: 20px;
+  background-color: #424f5c;
+  /* this fixes a bug where pseudo elements are slighty off position */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-panel-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-panel-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.no-touch .cd-panel-close:hover {
+  background-color: #424f5c;
+}
+.no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
+  background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.no-touch .cd-panel-close:hover::before {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+.no-touch .cd-panel-close:hover::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.cd-panel-container {
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  background: #dbe2e9;
+  z-index: 1;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.from-right .cd-panel-container {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+.from-left .cd-panel-container {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+.is-visible .cd-panel-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-panel-container {
+    width: 50%;
+  }
+}
+
+.cd-panel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 70px 5%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+.cd-panel-content p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #424f5c;
+  line-height: 1.4;
+  margin: 2em 0;
+}
+.cd-panel-content p:first-of-type {
+  margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-content p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
